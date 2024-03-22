@@ -117,6 +117,45 @@ public class MyHashTable<K, V> {
         }
     }
 }
+    public void clear() {
+        bucketArray = new LinkedList[numBuckets]; // Reinitialize the array of linked lists
+        size = 0;
+        for (int i = 0; i < numBuckets; i++) {
+            bucketArray[i] = new LinkedList<>(); // Initialize each bucket with a new linked list
+        }
+    }
+
+    public List<V> values() {
+        List<V> valuesList = new LinkedList<>();
+        for (LinkedList<HashNode<K, V>> bucket : bucketArray) {
+            for (HashNode<K, V> entry : bucket) {
+                valuesList.add(entry.value);
+            }
+        }
+        return valuesList;
+    }
+
+    public Set<K> keySet() {
+        Set<K> keySet = new HashSet<>();
+        for (LinkedList<HashNode<K, V>> bucket : bucketArray) {
+            for (HashNode<K, V> entry : bucket) {
+                keySet.add(entry.key);
+            }
+        }
+        return keySet;
+    }
+    
+    public boolean containsKey(K key) {
+        int bucketIndex = getBucketIndex(key);
+        LinkedList<HashNode<K, V>> chain = bucketArray[bucketIndex];
+        for (HashNode<K, V> entry : chain) {
+            if (entry.key.equals(key)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
 
 
 
