@@ -1,4 +1,4 @@
-package main.java.assignment.dictionary;
+package assignment.dictionary;
 import java.util.Iterator;
     
 /** A dictionary with distinct search keys. 

@@ -1,4 +1,4 @@
-package main.java.assignment.dictionary;
+package assignment.dictionary;
 
 /*
 

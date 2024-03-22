@@ -3,7 +3,7 @@
  * is believed to be spelled incorrectly.
  * 
  */
-package main.java.assignment.dictionary;
+package assignment.dictionary;
 public class Wordlet
 {
     String myWord;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package main.java.assignment.dictionary;
+package assignment.dictionary;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

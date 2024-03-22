@@ -4,38 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9922e06-1649-4ca0-9deb-961ff32fb734" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/group20_cs4050_7050_assignment3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/AList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/Dictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/DictionaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/DictionaryInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/HashedMapAdaptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/LinesToDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/ListInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/MisSpellActionThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/MyHashTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/Wordlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/AList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/Dictionary.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/DictionaryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/DictionaryInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/LinesToDisplay.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/ListInterface.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/UMIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/Wordlet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/check.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/dictionary-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/sampleDictionary.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/module-info.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/group20_cs4050_cs7050_assignment3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="a9922e06-1649-4ca0-9deb-961ff32fb734" name="Changes" comment="fixed files">
+      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/group20_cs4050_7050_assignment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/group20_cs4050_7050_assignment3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/AList.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/AList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/DictionaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/DictionaryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/DictionaryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/HashedMapAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/HashedMapAdaptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/LinesToDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/LinesToDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/ListInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/ListInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/MisSpellActionThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/MisSpellActionThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/MyHashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/Wordlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary/Wordlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/UMIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/resources/assignment.dictionary/UMIcon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/check.txt" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/resources/assignment.dictionary/check.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/dictionary-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/resources/assignment.dictionary/dictionary-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target/classes/assignment/dictionary/sampleDictionary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/resources/assignment.dictionary/sampleDictionary.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +51,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Dictionary.executor": "Run",
+    "Application.src.main.java.assignment.dictionary.Dictionary.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -73,6 +64,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,14 +75,19 @@
       <recent name="$PROJECT_DIR$/group20_cs4050_7050_assignment3" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/group20_cs4050_7050_assignment3/target" />
+      <recent name="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/resources/assignment.dictionary" />
+      <recent name="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java" />
+      <recent name="$PROJECT_DIR$/group20_cs4050_7050_assignment3/src/main/java/assignment/dictionary" />
       <recent name="$PROJECT_DIR$/target" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Dictionary" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.assignment.dictionary.Dictionary" />
-      <module name="group20_cs4050_cs7050_assignment3" />
+    <configuration name="src.main.java.assignment.dictionary.Dictionary" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="src.main.java.assignment.dictionary.Dictionary" />
+      <module name="group20_cs4050_7050_assignment3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.java.assignment.dictionary.*" />
@@ -117,7 +116,7 @@
       <updated>1711067343499</updated>
       <workItem from="1711067344515" duration="2211000" />
       <workItem from="1711069579221" duration="77000" />
-      <workItem from="1711069658368" duration="908000" />
+      <workItem from="1711069658368" duration="3437000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -143,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711069696656</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed files">
+      <option name="closed" value="true" />
+      <created>1711135965624</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711135965624</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="fixed files" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed files" />
   </component>
 </project>
