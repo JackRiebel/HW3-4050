@@ -63,21 +63,21 @@ public class MisSpellActionThread implements Runnable {
      * @param theDictionary The dictionary to load.
      */
     public void loadDictionary(String theFileName, DictionaryInterface<String, String> theDictionary) {
-        Scanner input;
-        try {
-// ADD CODE HERE
-// >>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-         
-
-
-        } catch (IOException e) {
-            System.out.println("There was an error in reading or opening the file: " + theFileName);
-            System.out.println(e.getMessage());
+    Scanner input;
+    try {
+        // >>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        input = new Scanner(new File(theFileName));
+        while (input.hasNextLine()) {
+            String line = input.nextLine().trim();
+            theDictionary.add(line, line); // Add word to dictionary, using it as both key and value
         }
-
+        dictionaryLoaded = true;
+        //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+    } catch (IOException e) {
+        System.out.println("There was an error in reading or opening the file: " + theFileName);
+        System.out.println(e.getMessage());
+        dictionaryLoaded = false; // In the event there is an exception, adjust dictionaryLoaded to false.
+        }
     }
 
     /**
@@ -88,21 +88,26 @@ public class MisSpellActionThread implements Runnable {
     public void checkWords(String theFileName, DictionaryInterface<String, String> theDictionary) {
         Scanner input;
         try {
- 
-// ADD CODE HERE
-// >>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-
+            // >>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            input = new Scanner(new File(theFileName));
+            while (input.hasNextLine()) {
+                String line = input.nextLine();
+                String[] words = line.split("\\W+");
+                for (String word : words) {
+                    if (!word.isEmpty()) { // Check for non-empty words
+                        boolean spelledCorrectly = checkWord(word.toLowerCase(), theDictionary); // Assuming case-insensitive dictionary
+                        Wordlet wordlet = new Wordlet(word, spelledCorrectly);
+                        myLines.addWordlet(wordlet);
+                    }
+                }
+            }
+        //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         } catch (IOException e) {
             System.out.println("There was an error in reading or opening the file: " + theFileName);
             System.out.println(e.getMessage());
-        }
-
+         }
     }
+
 
     /**
      * Check the spelling of a single word.
@@ -112,16 +117,13 @@ public class MisSpellActionThread implements Runnable {
         boolean result = false;
 
         // ADD CODE HERE
-//>>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>        
-
-
-
-
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        //>>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+        result = theDictionary.contains(word);
+        //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
         return result;
-
     }
+
 
     private void showLines(LinesToDisplay lines) {
         try {
@@ -136,4 +138,3 @@ public class MisSpellActionThread implements Runnable {
     }
 
 } // end class MisspellActionThread
-
