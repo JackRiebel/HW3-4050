@@ -1,4 +1,4 @@
-package assignment.dictionary;
+package main.java.assignment.dictionary;
 
 import java.util.Iterator;
 
@@ -8,49 +8,57 @@ import java.util.Iterator;
  *
  */
 
+import java.util.ArrayList;
+
 public class LinesToDisplay {
 
-    public static final int LINES = 10;     // Display 10 lines
-    private AList<Wordlet>[] lines;
+    public static final int LINES = 10; // Display 10 lines
+    private ArrayList<Wordlet>[] lines;
     private int currentLine;
 
     /**
      * Constructor for objects of class LinesToDisplay
      */
     public LinesToDisplay() {
-        //ADD CODE FOR THE CONSTRUCTOR
-//>>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>        
-        
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
+        // Initialize the array of lists and the current line
+        lines = new ArrayList[LINES];
+        for (int i = 0; i < LINES; i++) {
+            lines[i] = new ArrayList<>();
+        }
+        currentLine = 0;
     }
 
     /**
      * Add a new wordlet to the current line.
-     *
      */
     public void addWordlet(Wordlet w) {
-        //ADD CODE HERE TO ADD A WORDLET TO THE CURRENT LINE
-
-//>>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>        
-       
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        // Check if the current line is within bounds and add the wordlet
+        if (currentLine < LINES) {
+            lines[currentLine].add(w);
+        }
     }
 
     /**
      * Go to the next line, if the number of lines has exceeded LINES, shift
      * them all up by one
-     *
      */
     public void nextLine() {
-        //ADD CODE TO HANDLE THE NEXT LINE
-//>>>>>>>>>>> ADDED CODE >>>>>>>>>>>>>>>>>>>>>>        
+        // Increment the current line
+        currentLine++;
 
-//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+        // Check if current line exceeds LINES
+        if (currentLine >= LINES) {
+            // Shift all lines up by one
+            for (int i = 1; i < LINES; i++) {
+                lines[i - 1] = lines[i];
+            }
+            // Initialize a new line at the end
+            lines[LINES - 1] = new ArrayList<>();
+            currentLine = LINES - 1; // Reset the current line to the last line
+        }
     }
+}
 
-      
     public int getCurrentLine(){
         return currentLine;
     }

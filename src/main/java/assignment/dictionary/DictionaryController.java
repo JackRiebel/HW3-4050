@@ -1,4 +1,4 @@
-package assignment.dictionary;
+package main.java.assignment.dictionary;
 
 import java.net.URL;
 import java.util.Iterator;
