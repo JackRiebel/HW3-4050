@@ -46,7 +46,6 @@ public class MyHashTable<K, V> {
     }
 
     private int customHashCode(K key) {
-        // Here, I'm assuming key.toString() gives a valid string representation.
         String keyAsString = key.toString();
         int hash = 0;
         for (int i = 0; i < keyAsString.length(); i++) {
