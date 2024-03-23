@@ -41,6 +41,21 @@ public class MyHashTable<K, V> {
         for (int i = 0; i < numBuckets; i++)
             bucketArray[i] = new LinkedList<>();
     }
+    private int getBucketIndex(K key) {
+        return key == null ? 0 : customHashCode(key) % numBuckets;
+    }
+
+    private int customHashCode(K key) {
+        // Here, I'm assuming key.toString() gives a valid string representation.
+        String keyAsString = key.toString();
+        int hash = 0;
+        for (int i = 0; i < keyAsString.length(); i++) {
+            hash = 31 * hash + keyAsString.charAt(i);
+        }
+        // Ensure the hash code is non-negative
+        return hash & 0x7fffffff;
+    }
+
 
     public int size() { return size; }
     public boolean isEmpty() { return size() == 0; }
@@ -144,7 +159,7 @@ public class MyHashTable<K, V> {
         }
         return keySet;
     }
-    
+
     public boolean containsKey(K key) {
         int bucketIndex = getBucketIndex(key);
         LinkedList<HashNode<K, V>> chain = bucketArray[bucketIndex];
